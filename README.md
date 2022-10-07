@@ -141,22 +141,41 @@
 
 > Scripts creados para facilitar el lnazamiento de instrucciones por consola en desarrollo y para producción.
 
-* ### "build": "npx tsc":
+### Del ejercicio 1
+
+* #### "build": "npx tsc":
     > Crea una carpeta (Configurada anteriormente en el archivo tsconfig.json) en la que compila TypeScript a JavaScript.
 
-* ### "start": "node dist/index.js":
+* #### "start": "node dist/index.js":
     > Ejecuta el archivo index.js.
 
-* ### "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"":
+* #### "dev": "concurrently \"npx tsc --watch\" \"nodemon -q dist/index.js\"":
     > Lanza a través de concurrently dos comandos, sirven para desarrollo:
         1. npx tsc: de la que ya se ha hablado antes, crea una carpeta que compila TypeScript a JavaScript y la instruccion --watch en la que se queda escuchando cambios.
         2. nodemon -q dist/index.js: que monitoriza los cambios de código y reinicia el servidor cuando estos se produzcan.
 
-* ### "test": "jest":
+* #### "test": "jest":
     > Lanza la herramienta de pruebas, pasa los tests que se han realizado y muestra si se han pasado o no, crea una carpeta coverage donde recoge el tanto porciento de los aciertos o fallos.
 
-* ### "serve:coverage": "cd coverage/lcov-report && npx serve":
+* #### "serve:coverage": "cd coverage/lcov-report && npx serve":
     > Va a la carpeta coverage creada anteriormente, realiza un reporte de los datos de jest y los sirve en una página HTML en un puerto local.
+
+### Del ejercicio 3
+
+* #### "dev": "concurrently \"npx tsc --watch\" \"npm run swagger\" \"nodemon -q dist/index.js\""
+    > Lanza a través de concurrently tres comando, sirven para desarrollo;
+        1. npx tsc: crea una carpeta que compila TypeScript a JavaScript y la instrucción --watch en la que se queda escuchando cambios.
+        2. npm run swagger: Que crea un documento que se sirve en la web, con la documentación de la API que necesita el programador Frontend.
+        3. nodemon -q dist/index.js: que monitoriza los cambios de código y reinicia el servidor cuando estos se produzcan.
+
+* #### "build": "npx webpack --mode development"
+    > Crea un archivo index en JavaScript con todos los archivos de la aplicación en modo de desarrollo.
+
+* #### "build:prod": "npx webpack --mode production"
+    > Crea un archivo index en JavaScript con todos los archivos de la aplicación en modo de producción.
+
+* #### "swagger": "tsoa spec"
+    > Instrucciones para lanzar con el script dev, crea un documento que se sirve en la web, con la documentación de la API que necesita el programador Frontend.
 
 ## Variables de entorno:
 
