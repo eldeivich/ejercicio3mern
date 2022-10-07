@@ -1,4 +1,42 @@
-# Ejercicio 2 del Curso de MERN de OpenBootcamp
+# Ejercicio 3 del Curso de MERN de OpenBootcamp
+
+## Dependencias instaladas del ejercicio 3
+
+### 1. Dependencias de producción
+
+> Son dependencias instaladas tanto para el entorno de desarrollo como para el entorno de producción.
+
+* #### mongoose en su versión ^6.6.5:
+
+    > Librería que permite realizar todo tipo de consultas en una base de datos de Mongo DB.
+
+* #### swagger-jsdoc en su versión ^6.2.5:
+    
+    > Genera documentación a partir de comentarios que se van creando en el código de la aplicación.
+
+* #### swagger-ui-express en su versión ^4.5.0:
+
+    > Genera una interfaz con la documentación del proyecto.
+
+* #### tsoa en su versión ^4.1.3:
+
+    > Para crear con decoradores una extructura clara para la aplicación.
+
+### 2. Dependencias de desarrollo
+
+> Son dependencias instaladas solamente para el entorno de desarrollo.
+
+* #### ts-loader en su versión ^9.4.1:
+
+    > Loader de TypeScript para WebPack.
+
+* #### @types/swagger-jsdoc en su versión ^6.0.1:
+
+    > Contiene las definiciones de swagger-jsdoc para TypeScript.
+
+* #### @types/swagger-ui-express en su versión ^4.1.3:
+
+    > Contiene las definiciones de swagger-ui-express para TypeScript.
 
 ## Dependencias instaladas del ejercicio 2
 
